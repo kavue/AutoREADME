@@ -23,8 +23,7 @@ inquirer
                 'Contributing',
                 'License',
                 'Tests',
-                'Questions',
-                'Exit'
+                'Questions'
             ]
         },
         {
@@ -76,8 +75,10 @@ inquirer
     ])
     .then((response) => {
         // Generate the table of contents based on the selected items
-        const tocList = response.toc.map(item => `<li><a href="#${item.toLowerCase()}">${item}</a></li>`).join('\n');
-
+        const tocList = response.toc.map(item => 
+            `<li><a href="#${item.toLowerCase().replace(/\s+/g, '-')}">${item}</a></li>`
+        ).join('\n');
+    
         const licenseBadge = {
             'MIT': 'https://img.shields.io/badge/license-MIT-blue.svg',
             'Apache': 'https://img.shields.io/badge/license-Apache-orange.svg',
@@ -116,11 +117,11 @@ ${response.questions}
 
 * GitHub: [${response.github}](https://github.com/${response.github})
 * Email: [${response.email}](mailto:${response.email})
-        `;
-
-        fs.writeFile('README.md', template, (err) => 
-            err 
-                ? console.log("Error creating README.md", err) 
-                : console.log("README.md file created successfully!")
-        );
-    });
+            `;
+        
+            fs.writeFile('SAMPLE.md', template, (err) => 
+                err 
+                    ? console.log("Error creating README.md", err) 
+                    : console.log("README.md file created successfully!")
+     );
+});    
