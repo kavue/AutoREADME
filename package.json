@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "badge-maker": "^4.1.0",
     "inquirer": "^8.2.4"
   }
 }
