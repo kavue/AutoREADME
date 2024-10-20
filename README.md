@@ -1,6 +1,6 @@
 # AutoREADME
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 Spend less time on writing a README file and more time on coding! This command-line application will help you generate a professional README file.
