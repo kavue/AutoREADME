@@ -20,7 +20,7 @@ The inquirer dependency is required. To install it, run the following command in
 To generate a README file, run the following command in your terminal: node index.js.
 
 ## License
-This application is covered by the MIT license.
+This application is licensed under the MIT license.
 
 ## Contributing
 Contributions are welcome! Please open an issue first, then submit a PR. Otherwise, let me know if you find any bugs or have suggestions. 

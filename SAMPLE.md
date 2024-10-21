@@ -1,10 +1,10 @@
 
 # SampleREADME
 
-[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/GNU-GPL-v3)
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
-Provide a description of your project.
+Provide a description of the project.
 
 ## Table of Contents
 <li><a href="#installation">Installation</a></li>
@@ -15,22 +15,22 @@ Provide a description of your project.
 <li><a href="#questions">Questions</a></li>
 
 ## Installation
-Provide steps to install your project.
+Provide steps to install project.
 
 ## Usage
-Provide usage instructions and examples for users.
+Provide usage instructions and example for users.
 
 ## License
 Provide license notice.
 
 ## Contributing
-Provide instructions on how developers can contribute.
+Provide instructions on how developers can contribute. 
 
 ## Tests
 Provide test instructions.
 
 ## Questions
-Provide instructions on how to reach you.
+Let user know how they can reach you for questions.
 
 * GitHub: [username](https://github.com/username)
 * Email: [email](mailto:email)

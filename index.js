@@ -40,7 +40,7 @@ inquirer
             type: "list",
             message: "Select a license.",
             name: "license",
-            choices: ['MIT', 'Apache', 'GNU GPL v3', 'Unlicense']
+            choices: ['MIT', 'Apache', 'GPLv3', 'Unlicense']
         },
         {
             type: "input",
@@ -82,14 +82,21 @@ inquirer
         const licenseBadge = {
             'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
             'Apache': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
-            'GNU GPL v3': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
+            'GPLv3': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
             'Unlicense': 'https://img.shields.io/badge/license-Unlicense-blue.svg',
         }[response.license];
+
+        const licenseLinks = {
+            'MIT': 'https://opensource.org/licenses/MIT',
+            'GPLv3': 'https://www.gnu.org/licenses/gpl-3.0',
+            'Apache': 'https://opensource.org/licenses/Apache-2.0', 
+            'Unlicense': 'http://unlicense.org/'
+          };
         
         const template = `
 # ${response.title}
 
-[![License](${licenseBadge})](https://opensource.org/licenses/${response.license.replace(/\s+/g, '-')})
+[![License](${licenseBadge})](${licenseLinks[response.license]})
 
 ## Description
 ${response.description}
@@ -119,9 +126,10 @@ ${response.questions}
 * Email: [${response.email}](mailto:${response.email})
             `;
         
-            fs.writeFile('SAMPLE.md', template, (err) => 
-                err 
-                    ? console.log("Error creating README.md", err) 
-                    : console.log("README.md file created successfully!")
-     );
-});
+        fs.writeFile('SAMPLE.md', template, (err) => 
+            err 
+                ? console.log("Error creating README.md", err) 
+                : console.log("README.md file created successfully!")
+        );
+    });
+
