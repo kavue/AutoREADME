@@ -126,7 +126,7 @@ ${response.questions}
 * Email: [${response.email}](mailto:${response.email})
             `;
         
-        fs.writeFile('SAMPLE.md', template, (err) => 
+        fs.writeFile('README.md', template, (err) => 
             err 
                 ? console.log("Error creating README.md", err) 
                 : console.log("README.md file created successfully!")
