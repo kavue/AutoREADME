@@ -3,7 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Spend less time on writing a README file and more time on coding! This command-line application will help you generate a professional README file.
+Spend less time on writing a README file and more time on coding! This command-line application will help you generate a professional README file. Click on the below link to watch a quick video on how to use this application.
+
+<a href="https://drive.google.com/file/d/16b-cC0nG-JqNLTCgwaiKhBzW4IHco_lX/view">Walkthrough Video</a>
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,6 +20,8 @@ The inquirer dependency is required. To install it, run the following command in
 
 ## Usage
 To generate a README file, run the following command in your terminal: node index.js.
+
+<img src="./assets/images/terminal.jpg" alt="terminal response to prompts">
 
 ## License
 This application is licensed under the MIT license.
