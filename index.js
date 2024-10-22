@@ -75,10 +75,10 @@ inquirer
     ])
     .then((response) => {
         // Generate the table of contents based on the selected items
-        const tocList = response.toc.map(item => 
+        const tocList = response.toc.map(item =>
             `<li><a href="#${item.toLowerCase().replace(/\s+/g, '-')}">${item}</a></li>`
         ).join('\n');
-    
+
         const licenseBadge = {
             'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
             'Apache': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
@@ -89,10 +89,10 @@ inquirer
         const licenseLinks = {
             'MIT': 'https://opensource.org/licenses/MIT',
             'GPLv3': 'https://www.gnu.org/licenses/gpl-3.0',
-            'Apache': 'https://opensource.org/licenses/Apache-2.0', 
+            'Apache': 'https://opensource.org/licenses/Apache-2.0',
             'Unlicense': 'http://unlicense.org/'
-          };
-        
+        };
+
         const template = `
 # ${response.title}
 
@@ -125,10 +125,10 @@ ${response.questions}
 * GitHub: [${response.github}](https://github.com/${response.github})
 * Email: [${response.email}](mailto:${response.email})
             `;
-        
-        fs.writeFile('README.md', template, (err) => 
-            err 
-                ? console.log("Error creating README.md", err) 
+
+        fs.writeFile('README.md', template, (err) =>
+            err
+                ? console.log("Error creating README.md", err)
                 : console.log("README.md file created successfully!")
         );
     });
